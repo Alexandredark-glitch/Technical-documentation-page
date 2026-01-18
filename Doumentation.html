@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link href="Documentation.css" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+</head>
+<body>
+    <main>
+<header>
+    <h1>Python Documentation</h1>
+</header>
+ <div class="main-content" aria-hidden="true">
+<section role="region" aria-labelledby="Introduction">
+    <h2 id="Introduction">Introduction</h2>
+    <p>Python is a high-level, interpreted programming language known for its simplicity, readability, and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used in web development, data science, automation, artificial intelligence, and more.</p>
+</section>
+<section role="region" aria-labelledby="What You Should Already Know">
+    <h2 id="What You Should Already Know">What You Should Already Know</h2>
+    <p>Before diving into Python, it helps to be familiar with:
+        <ul class="bullets">
+            <li>Basic programming concepts (variables, loops, functions)</li>
+
+            <li>Understanding of logic and control flow</li>
+
+            <li>Elementary mathematics</li>
+
+            <li>Experience with any programming language is a plus, but not required</li>
+        </ul>
+    
+</p>
+</section>    
+<section role="region" aria-labelledby="Python and Other Languages">
+<h2 id="Python and Other Languages">Python and Other Languages</h2>
+<p>Python is often compared with JavaScript and Java:
+    <ul class="bullets">
+
+<li>Python vs JavaScript: Python emphasizes readability and simplicity, while JavaScript is mainly used for web development.</li>
+
+<li>Python vs Java: Python syntax is simpler, and it doesn’t require explicit type declarations or compilation, unlike Java. Python is interpreted and dynamically typed.</li>
+
+    </ul>   
+</p>
+</section>
+<section role="region" aria-labelledby="Hello World">
+    <h2 id="Hello World">Hello World</h2>
+    <p>The classic first program:</p>
+    <code>print("Hello, World!")</code>
+    <p>Output:</p>
+    <output>Hello, World!</output>
+
+</section>
+<section role="region" aria-labelledby="Variables">
+    <h2 id="Variables">Variables</h2>
+    <p>Variables are containers for storing data values. In Python, you don’t need to declare a type; it is inferred dynamically.</p>
+    <h3>Declaring variables</h3>
+    <code>x = 5 # Integer 
+          name = "Alice" # String
+          pi = 3.14    # Float
+    </code>
+    <h3>Variable scope</h3>
+    <ul class="special bullets">
+        <li>Local variables: Defined inside a function and accessible only there.</li>
+
+        <li>Global variables: Defined outside any function and accessible throughout the program.</li>
+    </ul>
+    <code>global_var = "I am global"
+
+def example():
+    local_var = "I am local"
+    print(local_var)
+    print(global_var)
+
+example()
+</code>
+<h3>Global variables</h3>
+<p>Use the <strong><em>global</em></strong> keyword to modify a global variable inside a function:</p>
+<code>count = 0
+
+def increment():
+    global count
+    count += 1
+
+increment()
+print(count)  # Output: 1
+</code>
+</section>
+<section role="region" aria-labelledby="Constants">
+<h2 id="Constants">Constants</h2>
+<p>Python doesn’t have true constants. By convention, variables with all uppercase names are treated as constants: </p>
+<code> PI = 3.14159
+GRAVITY = 9.81
+</code>
+</section>
+<section role="region" aria-labelledby="if...else Statement">
+    <h2 id="if...else Statement"> If...else Statement</h2>
+    <h3>Conditional execution: </h3>
+    <code>x = 10
+if x > 0:
+    print("Positive")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative")
+</code>
+</section>
+<section role="region" aria-labelledby="while Statement">
+    <h2>While Statement</h2>
+    <p>Repeated execution while a condition is true: </p>
+    <code>count = 0
+while count < 5:
+    print(count)
+    count += 1
+    </code>
+    <p>Output: </p>
+    <code>0
+1
+2
+3
+4
+</code>
+</section>    
+<section role="region" aria-labelledby="Reference"> 
+    <h2 id="Reference">Reference</h2>
+    <ul class="Reference">
+        <li><a href="https://docs.python.org/3/">Official Python Documentation</a></li>
+        <li><a href="https://www.w3schools.com/python/">Python tutorial on W3Schools</a></li>
+        <li><a href="https://www.python.org/about/gettingstarted/">Python.org Beginners guide</a></li>
+    </ul>
+</section>
+</div>
+<div class="sidebar" aria-hidden="true">
+    <h2>Python</h2>
+
+<ul>
+    <li><a href="#Introduction">Introduction</span></a></li>
+    <li><a href="#What You Should Already Know">What You Should Already Know</a></li>
+    <li><a href="#Python and Other Languages">Python and Other Languages</a></li>
+    <li><a href="#Hello World">Hello World</a></li>
+    <li><a href="#Variables">Variables</a></li>
+    <li><a href="#Constants">Constants</a></li>
+    <li><a href="#Reference">Reference</a></li>
+    <li><a href="#if...else Statement">if...else Statement</a></li>
+</ul> 
+</div>
+<footer>
+    <h2>Coded by Alex copyright 2025</h2>
+</footer>
+    </main>
+</body>
+</html>
