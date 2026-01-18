@@ -146,9 +146,10 @@ color: black;
 .Reference li {
     list-style: none;
 }
-footer {
+footer a {
+    display: block;
    text-align: center;
-   margin-bottom: 2rem;
+   margin-bottom: 4rem;
    
 }
 
